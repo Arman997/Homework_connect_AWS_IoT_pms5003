@@ -15,7 +15,7 @@ cert_path = "/home/armanaristakesyan/Certificate/accf-certificate.pem.crt"
 key_path = "/home/armanaristakesyan/Certificate/accf-private.pem.key"
 
 # Setup MQTT client with TLS
-mqttc = mqtt.Client()  # Без client_id — нормально, если 1 устройство
+mqttc = mqtt.Client()
 
 mqttc.tls_set(ca_certs=ca_path,
               certfile=cert_path,
